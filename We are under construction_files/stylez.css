@@ -1,0 +1,295 @@
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,100italic,300italic|Raleway:100);
+
+.fonts{
+	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', cursive;
+}
+
+/* headers */
+
+h3:focus{
+	outline: none;
+}
+
+/* object oriented properties */
+	.circ_bg{
+		margin-top:0px;
+		height: 100px;
+		width: 100px;
+
+		display: block;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+
+		z-index: -1;
+		background-color: rgba(0,0,0,0.5);
+
+		border-radius: 80px;
+	}
+
+	.text_color{
+		color:white;
+	}
+
+	/* the class is used to make some items impossible to select */
+	.unselectable {
+		-moz-user-select: -moz-none;
+		-khtml-user-select: none;
+		-webkit-user-select: none;
+
+		/*
+		 Introduced in IE 10.
+		 See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+		*/
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	/* background classes */
+	.background0{
+		background: url(../img/backgrounds/0.jpg) center;
+	}
+	.background1{
+		background: url(../img/backgrounds/1.jpg) center;
+	}
+	.background2{
+		background: url(../img/backgrounds/2.jpg) top center;
+	}
+	.background3{
+		background: url(../img/backgrounds/3.jpg) center;
+	}
+	.background4{
+		background: url(../img/backgrounds/4.jpg) center;
+	}
+	.background5{
+		background: url(../img/backgrounds/5.jpg) top center;
+	}
+	
+	.background6{
+		background: url(../img/backgrounds/6.jpg) top center;
+	}
+	
+	.background7{
+		background: url(../img/backgrounds/7.jpg)  center;
+	}
+	
+	.background8{
+		background: url(../img/backgrounds/8.jpg) top center;
+	}
+
+	.background9{
+		background: url(../We%20are%20under%20construction_files/9.jpg) left center;
+	}
+
+	.img_bg1{
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -50;
+	}
+
+.fade_curtain{
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 9999;
+	_display: none;
+}
+
+/* setup panel styling */
+.setup_panel{
+	position: absolute;
+	background-color: rgba(255,255,0,0.9);
+	top:15%;
+	_height: 300px;
+	width:200px;
+	left:-200px;
+
+}
+
+	.setup_panel h3:hover{
+		cursor: pointer;
+		background-color: rgba(255,0,255,0.1);
+	}
+	.setup_panel p:hover{
+		cursor: pointer;
+		background-color: rgba(0,0,255,0.1);
+	}
+	#accordion{
+		position: relative;
+		top:-50px;
+		padding-left: 10px;
+		margin-bottom: -50px;
+	}
+	.setup_ico{
+		display: none;
+		position: relative;
+		height: 50px;
+		width: 50px;
+		background-color: rgba(255,255,0,0.9);
+		left:200px;
+		_top:125px;
+		cursor: pointer;
+		z-index: 10;
+	}
+/* header styling */
+header{
+	line-height: 40px;
+	padding-top: 60px;
+	color: white;
+	font-family: 'Raleway', cursive;
+	text-align: center;
+	font-size: 30px;
+
+}
+
+/* digits styling */
+.arrow_D{
+	
+}
+
+.arrow_H{
+
+}
+.arrow_M{
+
+}
+
+.arrow_S{
+
+}
+
+.actual_arrow{
+	display: none;
+	position: relative;
+	left:45px;
+	top:-1px;
+	height: 5px;
+	width: 10px;
+	background-color: yellow;
+}
+
+.rel_wrap{
+	position: relative;
+}
+
+.arr_aligner{
+	_border: 1px solid black;
+	display: block;
+}
+.min, .sec, .hours, .days{
+	position: relative;
+	top:-68px;
+	text-align: center;
+
+	font-size: 50px;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+}
+
+.digits{
+	cursor: default;
+	margin-top: 50px;
+	_border: 1px solid black;
+	text-align: center;
+	font-family: 'Raleway', cursive;
+}
+.d_capt{
+	top:-68px;
+	position: relative;
+	font-size: 14px;
+	color: white;
+}
+
+/* social icons */
+.social{
+	text-align: center;
+}
+.social span{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 40px;
+}
+
+.cloud_ico{background: url(../img/social/cloud_21.png);}
+.facebook_ico{background: url(../img/social/fb_21.png);}
+.twitter_ico{background: url(../img/social/tw_21.png);}
+.linkedin_ico{background: url(../img/social/in_21.png);}
+.dribbble_ico{background: url(../img/social/dribble_21.png);}
+
+	.icon_defaults{
+		height: 30px;
+		width: 30px;
+		display: inline-block;
+		opacity: 0.8;
+		background-position: 0px 30px;
+	}
+
+	.hover_trans{
+		-webkit-transition: .15s ease;
+		-moz-transition: .15s ease;
+		-o-transition: .15s ease;
+		transition: .15s ease;
+	}
+
+	.hover_trans:hover{
+		background-position: 0px 0px;
+		-webkit-transition: .15s ease;
+		-moz-transition: .15s ease;
+		-o-transition: .15s ease;
+		transition: .15s ease;
+	}
+
+/* tweets styling */
+.tweets h3{
+	font-family: 'Raleway', cursive;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+
+#twitter_update_list{
+	list-style: none;
+}
+
+/*  979 resolution adjustements */
+@media (min-width: 768px) and (max-width: 979px) {
+
+	.arrow{
+
+		margin-left: 3px;
+	}
+
+}
+/* 767 resolution adjustements */
+@media (max-width: 767px) {
+
+	header{
+		padding-top: 10px;
+	}
+	.arrow{
+		_top:68px;
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.digits{
+		margin-top: 10px;
+	}
+
+	.change_height{
+		height: 110px;
+	}
+
+	.social img{
+		margin-top: 40px;
+	}
+
+}
+
